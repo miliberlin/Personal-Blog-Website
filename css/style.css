@@ -11,7 +11,7 @@
     "hd"
     "recent-post"
     "sd"
-    "post-grid"
+    "post-container"
     "ft";
 }
 
@@ -22,7 +22,7 @@
     grid-template-areas:
       "hd hd hd hd"
       "recent-post recent-post recent-post sd"
-      "post-grid post-grid post-grid sd"
+      "post-container post-container post-container sd"
       "ft ft ft ft";
   }
 }
@@ -34,7 +34,7 @@
     grid-template-areas:
     "hd hd hd hd"
     "recent-post recent-post recent-post sd"
-    "post-grid post-grid post-grid sd"
+    "post-container post-container post-container sd"
     "ft ft ft ft";
   }
 }
@@ -51,8 +51,8 @@
   grid-area: sd;
 }
 
-#post-grid {
-  grid-area: post-grid;
+#post-container {
+  grid-area: post-container;
 }
 
 #footer {
@@ -62,4 +62,22 @@
 
 div {
   border: 2px solid red;
+}
+
+h2 {
+  border: 2px solid blue;
+}
+
+
+#post-grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+@media (min-width: 600px) {
+  #post-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: minmax(100px, auto);
 }
