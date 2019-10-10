@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  background-color: #f5f6f8;
+}
+
 #wrapper {
   display: grid;
   grid-template-columns: 100%;
@@ -41,6 +45,68 @@
 
 #header {
   grid-area: hd;
+  height: 300px;
+  width: 100%;
+  background-image: url("../img/header-mobile.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#side {
+  background-color: rgba(122, 108, 100, 0.3);
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-areas:
+  "wel img"
+  "intro img";
+}
+
+#profile-pic {
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+  max-width: 30vw;
+  grid-area: img;
+}
+
+#intro-text {
+  grid-area: intro;
+}
+
+#side > h2 {
+  grid-area: wel;
+}
+
+#post-grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+@media (min-width: 600px) {
+  #header {
+    grid-area: hd;
+    height: 300px;
+    width: 100%;
+    background-image: url("../img/header-desktop.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #post-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: minmax(100px, auto);
+  }
+  #side {
+    background-color: rgba(122, 108, 100, 0.3);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "img"
+    "wel"
+    "intro";
 }
 
 #recent-post {
@@ -59,7 +125,7 @@
   grid-area: ft;
 }
 
-
+/*
 div {
   border: 2px solid red;
 }
@@ -67,17 +133,4 @@ div {
 h2 {
   border: 2px solid blue;
 }
-
-
-#post-grid {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-auto-rows: minmax(100px, auto);
-}
-
-@media (min-width: 600px) {
-  #post-grid {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-auto-rows: minmax(100px, auto);
-}
+*/
