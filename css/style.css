@@ -293,12 +293,14 @@ li {
   grid-area: img;
 }
 
-#intro-text {
+#side > #intro-text {
   grid-area: intro;
+  padding: 5px 20px;
 }
 
-#side > h2 {
+#side > h4 {
   grid-area: wel;
+  padding: 0 20px;
 }
 
 #post-grid {
@@ -340,6 +342,7 @@ li {
 
 #recent-post {
   grid-area: recent-post;
+  padding: 5px 20px 20px 20px;
 }
 
 #side {
@@ -348,6 +351,7 @@ li {
 
 #post-container {
   grid-area: post-container;
+  padding: 10px 20px;
 }
 
 #footer {
