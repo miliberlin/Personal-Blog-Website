@@ -15,6 +15,7 @@ body {
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif;
+  letter-spacing: 0.05em;
   margin: 0.2em 0;
 }
 
@@ -53,6 +54,15 @@ p + p {
   margin: 0;
 }
 
+.post-info {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.05em;
+  margin: 0.2em 0;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+
 strong {
 }
 
@@ -70,7 +80,7 @@ a {
 }
 
 a:visited {
-  color: #f29d4d;
+  color: #f6aa1c;
 }
 
 a:hover {
@@ -105,26 +115,30 @@ ul, ol, dl {
 .btn {
   width: 150px;
   padding: 10px 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1em;
+  letter-spacing: 0.1em;
   text-align: center;
-  color: #000;
   text-transform: uppercase;
   font-weight: 600;
   margin: 15px 0;
   cursor: pointer;
-  /* display: inline-block; */
+  display: inline-block;
 }
 
 .btn-primary {
-  background-color: #86a578;
-  border: 2px solid #86a578;
-  color: #fffaf0;
+  background-color: transparent;
+  border: 2px solid #f6aa1c;
+  border-radius: 3px;
+  color: #f6aa1c;
   transition: all 0.3s;
 }
 
 .btn-primary:hover {
-  background-color: transparent;
-  border: 2px solid #86a578;
-  color: #86a578;
+  background-color: #f6aa1c;
+  border: 2px solid #f6aa1c;
+  border-radius: 3px;
+  color: #fffaf0;
   transform: scale(0.9);
 }
 
@@ -310,26 +324,29 @@ li {
   border-radius: 2px;
 }
 
-.img-link {
+.link {
   outline: none;
   text-decoration: none;
   color: #fffaf0;
 }
 
-.img-link:visited {
+.link:visited {
   color: #fffaf0;
 }
 
-.img-link:hover {
+.link:hover {
   color: #F6AA1C;
 }
 
-@media (min-width: 600px) and (max-width: 800px) {
+@media (min-width: 600px) and (max-width: 1200px) {
   .post h4 {
     font-size: 1.5em;
   }
+  .post .post-info {
+    font-size: 0.8em;
+  }
   .text-gradient {
-    padding: 6px 10px;
+    padding: 8px 15px;
     margin: 5px;
   }
 }
@@ -339,7 +356,7 @@ li {
   justify-content: center;
   align-items: center;
   color: #fffaf0;
-  min-height: 180px;
+  min-height: 160px;
 }
 
 
