@@ -355,19 +355,33 @@ li {
   padding: 5px 20px 20px 20px;
 }
 
+.post img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
 #side {
   grid-area: sd;
 }
 
 #post-container {
   grid-area: post-container;
-  padding: 10px 20px;
+  padding: 5px 20px 20px 20px;
+}
+
+.post {
+  padding: 10px;
 }
 
 #footer {
   grid-area: ft;
+  height: 50px;
+  padding-left: 20px;
+}
+
+#footer > p {
   text-align: center;
-  background-color: rgba(122, 108, 100, 0.3);
 }
 
 /*
