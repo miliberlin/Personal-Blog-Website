@@ -1,66 +1,350 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-#wrapper {
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  background-color: #fffaf0;
+  color: #222;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.05em;
+  margin: 0.2em 0;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.7em;
+}
+
+h3 {
+  font-size: 2.4em;
+}
+
+h4 {
+  font-size: 2.1em;
+}
+
+h5 {
+  font-size: 1.8em;
+}
+
+h6 {
+  font-size: 1.5em;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  font-size: 1em;
+  margin: 1em 0 0;
+}
+
+p + p {
+  margin: 10px 0;
+}
+
+.post-info {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.05em;
+  margin: 0.2em 0;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+
+strong {
+}
+
+em {
+}
+
+u {
+
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  color: #86a578;
+}
+
+a:visited {
+  color: #f6aa1c;
+}
+
+a:hover {
+  color: #e54b4b;
+}
+
+q {
+  font-style: italic;
+  letter-spacing: 0.05em;
+}
+
+blockquote {
+  font-style: italic;
+  line-height: 2;
+  letter-spacing: 0.05em;
+  padding: 0 20px;
+}
+
+blockquote:first-letter {
+  float: left;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+ul, ol, dl {
+}
+
+/* Buttons */
+.btn {
+  width: 150px;
+  padding: 10px 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1em;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 15px 0;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: transparent;
+  border: 2px solid #f6aa1c;
+  border-radius: 3px;
+  color: #f6aa1c;
+  transition: all 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #f6aa1c;
+  border: 2px solid #f6aa1c;
+  border-radius: 3px;
+  color: #fffaf0;
+  transform: scale(0.9);
+}
+
+.btn-primary:active {
+  background-color: #f6aa1c;
+  border: 2px solid #f6aa1c;
+  border-radius: 3px;
+  color: #fffaf0;
+  transform: scale(0.9);
+}
+
+
+.btn-secondary {
+  background-color: #e54b4b;
+  border: 2px solid #e54b4b;
+  color: #fffaf0;
+  transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: transparent;
+  border: 2px solid #e54b4b;
+  color: #e54b4b;
+  transform: scale(0.9);
+}
+
+/* navigation */
+
+nav {
+  grid-area: nav;
+  background-color: #F6AA1C;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+}
+
+#nav-flex-title {
+  display: flex;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5em;
+  letter-spacing: 0.05em;
+  color: #222;
+  flex-flow: row nowrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#title {
+  font-size: 1.2em;
+  text-align: center;
+  margin-left: 0;
+  font-weight: 700;
+}
+
+#nav-flex-menu {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  font-size: 1em;
+  margin: 0px;
+  transition: all 0.3s;
+}
+
+li {
+  padding: 0 5px;
+}
+
+.nav-item {
+  list-style-type: none;
+  margin: 5px;
+}
+
+.nav-item > a {
+  color: #222;
+  padding: 8px 20px;
+  border-radius: 2px;
+}
+
+.nav-item > a:hover {
+  color: #222 !important;
+  background-color: #fffaf0;
+  border: 1px solid #fffaf0;
+}
+
+.nav-item > a:active {
+  color: #222 !important;
+  background-color: #fffaf0;
+  border: 1px solid #fffaf0;
+}
+
+.nav-item > a:visited {
+  color: #222;
+}
+
+
+/* Container Elements */
+
+#grid-container {
   display: grid;
-  grid-template-columns: 100%;
-  grid-auto-rows: minmax(100px, auto);
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 300px auto 200px 30px;
   grid-template-areas:
-    "hd"
-    "individual-post"
-    "post-suggestions"
-    "sd"
-    "ft";
+  "nav"
+  "hd"
+  "post"
+  "post-suggestions"
+  "ft";
 }
-
-@media (min-width: 600px) and (max-width: 800px){
-  #wrapper {
-    grid-template-columns: 25vw 25vw 25vw 25vw;
-    grid-auto-rows: minmax(100px, auto);
-    grid-template-areas:
-      "hd hd hd hd"
-      "individual-post individual-post individual-post sd"
-      "post-suggestions post-suggestions post-suggestions sd"
-      "ft ft ft ft";
-  }
-}
-
-@media (min-width: 801px) {
-  #wrapper {
-    grid-template-columns: auto auto auto 250px;
-    grid-auto-rows: minmax(100px, auto);
-    grid-template-areas:
-      "hd hd hd hd"
-      "individual-post individual-post individual-post sd"
-      "post-suggestions post-suggestions post-suggestions sd"
-      "ft ft ft ft";
-  }
-}
-
 
 #header {
   grid-area: hd;
+  width: 100%;
+  height: auto;
+  background-image: url("../img/ryan-tang-ANJHXftvvJ8-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
 }
 
-#individual-post {
-  grid-area: individual-post;
+#post {
+  padding: 0 30px 20px 30px;
+}
+.meta {
+  text-align: center;
 }
 
-#side {
-  grid-area: sd;
+/* media query grid */
+
+@media (min-width: 600px) {
+  #grid-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px auto 30px;
+    grid-template-areas:
+    "nav nav"
+    "hd post"
+    "ft ft";
+  }
+  nav {
+    height: 60px;
+  }
+  #footer {
+    height: 30px;
+  }
+  #nav-flex-title {
+    display: flex;
+    flex-flow: row wrap;
+    width: 40%;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #title {
+    font-size: 1.2em;
+    text-align: center;
+    margin-left: 0;
+    font-weight: 600;
+  }
+  #nav-flex-menu {
+    display: flex;
+    flex-flow: row wrap;
+    width: 60%;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav ul {
+    list-style-type: none;
+    font-size: 1em;
+    margin: 0px;
+    transition: all 0.3s;
+  }
+  #post {
+    overflow: scroll;
+  }
 }
 
-#post-suggestions {
-  grid-area: post-suggestions;
+.article-suggestion {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.suggestion-card {
+  width: 25%;
+  height: auto;
+}
+
+.suggestion-card-img {
+  width: 100px;
+  height: auto;
 }
 
 #footer {
   grid-area: ft;
-}
-
-
-div {
-  border: 2px solid red;
+  height: 30px;
+  color: #222;
+  padding-bottom: 10px;
+  text-align: center;
 }
