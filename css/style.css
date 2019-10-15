@@ -62,17 +62,6 @@ p + p {
   text-align: center;
 }
 
-
-strong {
-}
-
-em {
-}
-
-u {
-
-}
-
 a {
   outline: none;
   text-decoration: none;
@@ -96,7 +85,7 @@ blockquote {
   font-style: italic;
   line-height: 2;
   letter-spacing: 0.05em;
-  padding: 0 20px;
+  padding: 10px 30px;
 }
 
 blockquote:first-letter {
@@ -262,9 +251,6 @@ li {
   nav {
     height: 60px;
   }
-  #footer {
-    height: 30px;
-  }
   #nav-flex-title {
     display: flex;
     flex-flow: row wrap;
@@ -418,4 +404,8 @@ li {
   color: #222;
   padding-bottom: 10px;
   text-align: center;
+}
+
+.fab {
+  padding: 5px;
 }

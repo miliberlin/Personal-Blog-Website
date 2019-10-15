@@ -51,7 +51,7 @@ p {
 }
 
 p + p {
-  margin: 10px 0;
+  margin: 10px 5px;
 }
 
 .post-info {
@@ -60,17 +60,6 @@ p + p {
   margin: 0.2em 0;
   font-size: 1.2em;
   text-align: center;
-}
-
-
-strong {
-}
-
-em {
-}
-
-u {
-
 }
 
 a {
@@ -96,7 +85,7 @@ blockquote {
   font-style: italic;
   line-height: 2;
   letter-spacing: 0.05em;
-  padding: 0 20px;
+  padding: 10px 30px;
 }
 
 blockquote:first-letter {
@@ -248,7 +237,7 @@ li {
 #grid-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100px 300px auto 200px 30px;
+  grid-template-rows: 100px 300px auto auto 30px;
   grid-template-areas:
   "nav"
   "hd"
@@ -291,9 +280,6 @@ li {
   nav {
     height: 60px;
   }
-  #footer {
-    height: 30px;
-  }
   #nav-flex-title {
     display: flex;
     flex-flow: row wrap;
@@ -322,23 +308,110 @@ li {
   }
   #post {
     overflow: scroll;
+    padding: 0 30px 0px 30px;
   }
 }
 
-.article-suggestion {
+.author-info {
+  width: 100%;
+  height: auto;
+  background-color: #86a578;
+  padding: 10px;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-info p {
+  margin: 0;
+}
+.author-info-text {
   width: 100%;
 }
 
+.circle-frame {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  border-radius: 50%;
+  padding: 10px 20px;
+}
+
+.author-info-img {
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  min-width: 100px;
+  max-width: 200px;
+  object-fit: cover;
+}
+
+@media (min-width: 1000px) {
+  .author-info {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .circle-frame {
+    width: 40%;
+  }
+  .author-info-text {
+    width: 60%;
+  }
+}
+
+.blog-article img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.social-sharing {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
+.fab {
+  padding: 5px;
+}
+
+.post-suggestions {
+  grid-area: post-suggestions;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-around;
+  align-items: flex-end;
+  text-align: center;
+}
+
+.post-suggestions h4 {
+  width: 100%;
+}
+
+
 .suggestion-card {
-  width: 25%;
+  width: 30%;
+  min-width: 120px;
   height: auto;
 }
 
+.suggestion-card h6 {
+  font-size: 1.2em;
+}
+
 .suggestion-card-img {
-  width: 100px;
-  height: auto;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+hr {
+  border-top: 1px solid #e54b4b;
+  margin: 20px 0;
 }
 
 #footer {
