@@ -283,7 +283,7 @@ li {
   grid-area: top-post;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/ryan-tang-ANJHXftvvJ8-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/neon-shop-ad.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -348,7 +348,7 @@ li {
 
 #post-1 {
   grid-area: post-1;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/alex-knight-wfwUpfVqrKU-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/backstreet.jpg");
   width: 100%;
   height: 100%;
   background-position: center;
@@ -360,7 +360,7 @@ li {
 
 #post-2 {
   grid-area: post-2;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/elliot-banks-5EVCk6E6EEk-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/cherry-blossom.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -370,7 +370,7 @@ li {
 
 #post-3 {
   grid-area: post-3;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/jezael-melgoza-7H77FWkK_x4-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/tokyo-tower.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -380,7 +380,7 @@ li {
 
 #post-4 {
   grid-area: post-4;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/jezael-melgoza-layMbSJ3YOE-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/shopping-area.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -390,7 +390,7 @@ li {
 
 #post-5 {
   grid-area: post-5;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/pawel-nolbert-4u2U8EO9OzY-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/tokyo-at-night.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
